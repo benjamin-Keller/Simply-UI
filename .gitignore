@@ -1,6 +1,5 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/node
-# Edit at https://www.toptal.com/developers/gitignore?templates=node
+### CSS ###
+css/
 
 ### Node ###
 # Logs
@@ -141,5 +140,3 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
-
-# End of https://www.toptal.com/developers/gitignore/api/node
