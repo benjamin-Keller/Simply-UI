@@ -1,6 +1,16 @@
 @use "sass:math";
 
 $grid-columns: 12;
+$grid-gaps: (
+    "0": 0,
+    "1": 10px,
+    "2": 20px,
+    "3": 30px,
+    "4": 40px,
+    "5": 50px
+);
+
+$layout-values: flex-start, flex-end, center, space-between, space-around;
 
 // base layout
 .container {
@@ -13,6 +23,26 @@ $grid-columns: 12;
 .row {
     display: flex;
     flex-flow: row wrap;
+}
+
+// grid gaps
+/* Grid Gaps */
+@each $key, $val in $grid-gaps {
+    .gap-#{$key} > * {
+        padding: $val;
+    }
+    .gap-#{$key} {
+        margin-left: -$val;
+        margin-right: -$val;
+    }
+}
+
+// justify content
+/* Justify Content */
+@each $val in $layout-values {
+    .justify-#{$val} {
+        justify-content: $val;
+    }
 }
 
 // cols
