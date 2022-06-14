@@ -75,6 +75,11 @@ img {
     flex-grow: 0;
     width: 41.6666666667%;
   }
+  .col-6-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
 }
 /* MD Grid */
 @media (min-width: 720px) {
@@ -103,6 +108,11 @@ img {
     box-sizing: border-box;
     flex-grow: 0;
     width: 25%;
+  }
+  .col-4-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
   }
 }
 /* Colors */
@@ -490,6 +500,44 @@ img {
   font-size: 0.75rem;
   font-weight: normal;
   border: 1px solid #9900ff;
+}
+
+/* Badges */
+
+.toast-primary {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #326dee;
+}
+
+.toast-secondary {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #1ac888;
+}
+
+.toast-outlined-green {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border-color: #19e635;
+}
+
+.toast-outlined-purple {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border-color: #9900ff;
 }
 
 /* Utilities */
