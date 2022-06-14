@@ -8,6 +8,15 @@
     font-weight: normal;
 }
 
+@mixin badge-outline($border-color: $primary) {
+    border-radius: $base-border-radius * 4;
+    background-color: transparent;
+    padding: math.div($base-padding, 4) math.div($base-padding, 2);
+    font-size: $font-size-sm;
+    font-weight: normal;
+    border: 1px solid $border-color;
+}
+
 .badge {
     @include badge;
 }
@@ -15,5 +24,9 @@
 @each $key, $val in $colors {
     .badge-#{$key} {
         @include badge($val);
+    }
+
+    .badge-outlined-#{$key} {
+        @include badge-outline($val);
     }
 }
