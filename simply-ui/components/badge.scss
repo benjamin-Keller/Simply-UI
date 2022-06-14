@@ -1,6 +1,6 @@
 @use 'sass:math';
 
-@mixin badge($bg-color: $info) {
+@mixin badge($bg-color: $primary) {
     border-radius: $base-border-radius * 4;
     background-color: $bg-color;
     padding: math.div($base-padding, 4) math.div($base-padding, 2);

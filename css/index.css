@@ -426,6 +426,61 @@ img {
 }
 
 /* Badges */
+.badge {
+  border-radius: 80px;
+  background-color: #326dee;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-secondary {
+  border-radius: 80px;
+  background-color: #1ac888;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-error {
+  border-radius: 80px;
+  background-color: #d32752;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-info {
+  border-radius: 80px;
+  background-color: #f6c31c;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-green {
+  border-radius: 80px;
+  background-color: #19e635;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-orange {
+  border-radius: 80px;
+  background-color: #ffa600;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.badge-purple {
+  border-radius: 80px;
+  background-color: #9900ff;
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
 
 /* Utilities */
 .p-0 {
