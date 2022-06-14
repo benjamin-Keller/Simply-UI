@@ -157,6 +157,17 @@ $utilities: (
       "xl": $font-size-xl,
       "xxl": $font-size-xxl
     )
+  ),
+  "position": (
+    "prefix": 'position',
+    "values": (
+      "absolute": absolute,
+      "sticky": sticky,
+      "fixed": fixed,
+      "static": static,
+      "relative": relative,
+      "inherit": inherit
+    )
   )
 );
 
