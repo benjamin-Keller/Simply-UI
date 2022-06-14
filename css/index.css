@@ -405,7 +405,7 @@ img {
   background-color: #c2ff99;
 }
 
-/* Navbar */
+/* Navbars */
 .navbar .container, .navbar-primary .container, .navbar, .navbar-primary {
   width: 100%;
   display: flex;
@@ -423,7 +423,11 @@ img {
 }
 .navbar-primary {
   background-color: #326dee;
-} /* Utilities */
+}
+
+/* Badges */
+
+/* Utilities */
 .p-0 {
   padding: 0;
 }
