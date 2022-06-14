@@ -1,16 +1,16 @@
 const { src, dest, watch, series} = require('gulp')
-const sass = require('gulp-sass')(require('sass'))
+const sass = require('gulp-sass')(require('sass'));
 const purgecss = require('gulp-purgecss')
 
 buildStyles = () => {
-    return src('simply-ui/**/*.scss')
+    return src('sass/**/*.scss')
         .pipe(sass())
-        .pipe(purgecss({ content: ['*.html']}))
+        .pipe(purgecss({ content: ['*.html', '*/*.html']}))
         .pipe(dest('css'))
 }
 
 watchTask = () => {
-    watch(['simply-ui/**/*.scss', '*.html'], buildStyles)
+    watch(['sass/**/*.scss', 'simply-ui/**/*.scss', '*.html', '*/*.html'], buildStyles)
 }
 
 exports.default = series(buildStyles, watchTask)
