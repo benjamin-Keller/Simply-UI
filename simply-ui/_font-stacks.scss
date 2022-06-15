@@ -5,7 +5,7 @@ $font-stacks: (
             "Helvetica",
             "Arial",
             sans-serif
-        ),
+        )
     ),
     "lucida-grande": (
         "stack": (
@@ -14,14 +14,14 @@ $font-stacks: (
             "Geneva",
             "Verdana",
             sans-serif
-        ),
+        )
     ),
     "verdana": (
         "stack": (
             "Verdana",
             "Geneva",
             sans-serif,
-        ),
+        )
     ),
     "system": (
         "stack": (
@@ -45,7 +45,7 @@ $font-stacks: (
             "Century Gothic",
             "Liberation Sans",
             sans-serif
-        ),
+        )
     ),
     "garamond": (
         "stack": (
@@ -55,7 +55,7 @@ $font-stacks: (
             "Hoefler Text",
             "Times New Roman",
             serif
-        ),
+        )
     ),
     "georgia": (
         "stack": (
@@ -63,7 +63,7 @@ $font-stacks: (
             "Times",
             "Times New Roman",
             serif
-        ),
+        )
     ),
     "hoefler-text": (
         "stack": (
@@ -72,14 +72,14 @@ $font-stacks: (
             "Garamond",
             "Times New Roman",
             serif
-        ),
+        )
     ),
     "consolas": (
         "stack": (
             "Consolas",
             "monaco",
             monospace
-        ),
+        )
     ),
     "courier-new": (
         "stack": (
@@ -88,7 +88,7 @@ $font-stacks: (
             "Lucida Sans Typewriter",
             "Lucida Typewriter",
             monospace
-        ),
+        )
     ),
     "monaco": (
         "stack": (
@@ -96,8 +96,16 @@ $font-stacks: (
             "Consolas",
             "Lucida Console",
             monospace
-        ),
+        )
     ),
+    "tahoma": (
+        "stack": (
+            Tahoma,
+            Verdana,
+            Segoe,
+            sans-serif
+        )
+    )
 
 );
 
