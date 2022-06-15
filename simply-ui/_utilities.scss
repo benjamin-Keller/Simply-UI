@@ -193,3 +193,19 @@ $map in $utilities {
     transform: translate(-50%, -50%);
   }
 }
+
+//  .class {
+//    @include ratio(16,9);
+//  }
+@mixin ratio($width, $height, $pseudo: false) {
+  $padding: unquote( ( $height / $width ) * 100 + '%' );
+  @if $pseudo {
+      &:before {
+          @include pseudo($pos: relative);
+          width: 100%;
+          padding-top: $padding;
+      }
+  } @else {
+      padding-top: $padding;
+  }
+}
