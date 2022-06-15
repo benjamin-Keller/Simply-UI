@@ -1,0 +1,112 @@
+$font-stacks: (
+    "helvetica": (
+        "stack": (
+            "Helvetica Neue",
+            "Helvetica",
+            "Arial",
+            sans-serif
+        ),
+    ),
+    "lucida-grande": (
+        "stack": (
+            "Lucida Grande",
+            "Lucida Sans Unicode",
+            "Geneva",
+            "Verdana",
+            sans-serif
+        ),
+    ),
+    "verdana": (
+        "stack": (
+            "Verdana",
+            "Geneva",
+            sans-serif,
+        ),
+    ),
+    "system": (
+        "stack": (
+            system-ui,
+            -apple-system,
+            BlinkMacSystemFont,
+            "Avenir Next",
+            "Avenir",
+            "Segoe UI",
+            "Lucida Grande",
+            "Helvetica Neue",
+            "Helvetica",
+            "Fira Sans",
+            "Roboto",
+            "Noto",
+            "Droid Sans",
+            "Cantarell",
+            "Oxygen",
+            "Ubuntu",
+            "Franklin Gothic Medium",
+            "Century Gothic",
+            "Liberation Sans",
+            sans-serif
+        ),
+    ),
+    "garamond": (
+        "stack": (
+            "Garamond",
+            "Baskerville",
+            "Baskerville Old Face",
+            "Hoefler Text",
+            "Times New Roman",
+            serif
+        ),
+    ),
+    "georgia": (
+        "stack": (
+            "Georgia",
+            "Times",
+            "Times New Roman",
+            serif
+        ),
+    ),
+    "hoefler-text": (
+        "stack": (
+            "Hoefler Text",
+            "Baskerville Old Face",
+            "Garamond",
+            "Times New Roman",
+            serif
+        ),
+    ),
+    "consolas": (
+        "stack": (
+            "Consolas",
+            "monaco",
+            monospace
+        ),
+    ),
+    "courier-new": (
+        "stack": (
+            "Courier New",
+            "Courier",
+            "Lucida Sans Typewriter",
+            "Lucida Typewriter",
+            monospace
+        ),
+    ),
+    "monaco": (
+        "stack": (
+            "Monaco",
+            "Consolas",
+            "Lucida Console",
+            monospace
+        ),
+    ),
+
+);
+
+@each $property, $map in $font-stacks {
+    $stack: map-get($map, "stack");
+
+    @each $font in $map {
+        .font-#{$property} {
+            font-family: $stack;
+        }
+    }
+}
