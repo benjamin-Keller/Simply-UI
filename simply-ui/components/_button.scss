@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @mixin btn($bg-color: #e2e2e2) {
     text-decoration: none;
     cursor: pointer;
@@ -7,9 +9,21 @@
     border-radius: $base-border-radius;
     background-color: $bg-color;
 }
+@mixin btn-sm($bg-color: #e2e2e2) {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: math.div($base-padding, 3)*2 math.div($base-padding, 3)*2;
+    border-radius: math.div($base-border-radius, 4)*3;
+    background-color: $bg-color;
+}
 
 .btn {
     @include btn;
+}
+.btn-sm {
+    @include btn-sm;
 }
 
 @each $key, $val in $colors {
@@ -30,6 +44,30 @@
 
     .btn-complement-#{$key} {
         @include btn($val);
+        color: light-comp($val);
+        &:hover {
+            color: $val;
+            background-color: light-comp($val);
+        }
+    }
+
+    .btn-sm-#{$key} {
+        @include btn-sm($val);
+        &:hover {
+            background-color: lighten($val, 5%);
+        }
+    }
+
+    .btn-sm-outlined-#{$key} {
+        @include btn-sm(#fff);
+        border: $base-border-thickness solid #{$val};
+        &:hover {
+            background-color: $val;
+        }
+    }
+
+    .btn-sm-complement-#{$key} {
+        @include btn-sm($val);
         color: light-comp($val);
         &:hover {
             color: $val;
