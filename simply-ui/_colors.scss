@@ -1,22 +1,27 @@
-@each $key, $val in $colors {
+@each $key,
+$val in $colors {
     .text-#{$key} {
         color: #{$val};
     }
+
     .text-hover-#{$key} {
         &:hover {
             color: #{$val};
         }
     }
+
     .bg-#{$key} {
         background-color: #{$val};
     }
 
-    @if($val != black and $val != white) {
+    @if($val !=black and $val !=white) {
+
         // light variations
         @for $i from 1 through 9 {
             .text-#{$key}-light-#{$i} {
                 color: mix(white, $val, $i * 10);
             }
+
             .text-hover-#{$key}-light-#{$i} {
                 &:hover {
                     color: mix(white, $val, $i * 10);
@@ -33,6 +38,7 @@
             .text-#{$key}-dark-#{$i} {
                 color: mix(black, $val, $i * 10);
             }
+
             .text-hover-#{$key}-dark-#{$i} {
                 &:hover {
                     color: mix(black, $val, $i * 10);
@@ -43,5 +49,27 @@
                 background-color: mix(black, $val, $i * 10);
             }
         }
+    }
+}
+
+//  .class {
+//      @include bg-gradient(red, black, 'vertical');
+//  }
+@mixin bg-gradient($start-color, $end-color, $orientation) {
+    background: $start-color;
+
+    @if $orientation=='vertical' {
+        background: -webkit-linear-gradient(top, $start-color, $end-color);
+        background: linear-gradient(to bottom, $start-color, $end-color);
+    }
+
+    @else if $orientation=='horizontal' {
+        background: -webkit-linear-gradient(left, $start-color, $end-color);
+        background: linear-gradient(to right, $start-color, $end-color);
+    }
+
+    @else {
+        background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+        background: radial-gradient(ellipse at center, $start-color, $end-color);
     }
 }
