@@ -115,6 +115,8 @@ img {
     width: 33.3333333333%;
   }
 }
+/* Fonts Stacks */
+
 /* Colors */
 .text-primary {
   color: #326dee;
@@ -291,6 +293,16 @@ img {
   background-color: #e2e2e2;
 }
 
+.btn-sm {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 15px;
+  background-color: #e2e2e2;
+}
+
 .btn-primary {
   text-decoration: none;
   cursor: pointer;
@@ -315,6 +327,34 @@ img {
   color: #fae7bf;
 }
 .btn-complement-primary:hover {
+  color: #326dee;
+  background-color: #fae7bf;
+}
+
+.btn-sm-primary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 15px;
+  background-color: #326dee;
+}
+.btn-sm-primary:hover {
+  background-color: #4a7ef0;
+}
+
+.btn-sm-complement-primary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 15px;
+  background-color: #326dee;
+  color: #fae7bf;
+}
+.btn-sm-complement-primary:hover {
   color: #326dee;
   background-color: #fae7bf;
 }
@@ -346,6 +386,19 @@ img {
   background-color: #1ac888;
 }
 
+.btn-sm-secondary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 15px;
+  background-color: #1ac888;
+}
+.btn-sm-secondary:hover {
+  background-color: #1ddf97;
+}
+
 .btn-error {
   text-decoration: none;
   cursor: pointer;
@@ -356,6 +409,19 @@ img {
   background-color: #d32752;
 }
 .btn-error:hover {
+  background-color: #da3961;
+}
+
+.btn-sm-error {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 15px;
+  background-color: #d32752;
+}
+.btn-sm-error:hover {
   background-color: #da3961;
 }
 
@@ -372,6 +438,19 @@ img {
   background-color: #f7c935;
 }
 
+.btn-sm-info {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 15px;
+  background-color: #f6c31c;
+}
+.btn-sm-info:hover {
+  background-color: #f7c935;
+}
+
 .btn-outlined-orange {
   text-decoration: none;
   cursor: pointer;
@@ -383,6 +462,20 @@ img {
   border: 1px solid #ffa600;
 }
 .btn-outlined-orange:hover {
+  background-color: #ffa600;
+}
+
+.btn-sm-outlined-orange {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 15px;
+  background-color: #fff;
+  border: 1px solid #ffa600;
+}
+.btn-sm-outlined-orange:hover {
   background-color: #ffa600;
 }
 
@@ -411,6 +504,35 @@ img {
   color: #c2ff99;
 }
 .btn-complement-purple:hover {
+  color: #9900ff;
+  background-color: #c2ff99;
+}
+
+.btn-sm-outlined-purple {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 15px;
+  background-color: #fff;
+  border: 1px solid #9900ff;
+}
+.btn-sm-outlined-purple:hover {
+  background-color: #9900ff;
+}
+
+.btn-sm-complement-purple {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 15px;
+  background-color: #9900ff;
+  color: #c2ff99;
+}
+.btn-sm-complement-purple:hover {
   color: #9900ff;
   background-color: #c2ff99;
 }
