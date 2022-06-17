@@ -218,6 +218,19 @@ $map in $utilities {
   }
 }
 
+@mixin pseudo(
+  $width: 100%,
+  $height: 100%,
+  $display: inline-block,
+  $pos: absolute,
+  $content: ""
+) {
+  content: $content;
+  display: $display;
+  position: $pos;
+  @include box($width, $height);
+}
+
 //  @include font-face(Roboto, "./assets/Roboto", normal, normal);
 @mixin font-face($font-name, $path, $weight: normal, $style: normal) {
   @font-face {
