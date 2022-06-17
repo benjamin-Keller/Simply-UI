@@ -6,8 +6,8 @@ Simple UI package for easy-to-use mobile-friendly simple designs
 - Download release.
 - Run `npm install` on your project.
 - Add a link to the Simply-UI's `css/index.css` in your `<head>`.
-- (Currently) Run `gulp` in your project while developing,
-  - This is due to gulp-purgecss to help keep the index.css small.
+- Run your project with `gulp` for development,
+  - gulp-purgecss will only build used css classes to save space.
 ## Demo
 
 See it in action with this [Demo](https://benjamin-keller.github.io/Simply-UI/)
