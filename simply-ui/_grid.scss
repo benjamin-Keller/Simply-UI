@@ -12,6 +12,7 @@ $grid-gaps: (
 
 $layout-values: flex-start, flex-end, center, space-between, space-around;
 $align-items-values: flex-start, flex-end, center, stretch, "base-line";
+$flex-wrap-values: wrap, nowrap;
 
 // base layout
 .container {
@@ -51,6 +52,14 @@ $align-items-values: flex-start, flex-end, center, stretch, "base-line";
 @each $val in $align-items-values {
     .align-items-#{$val} {
         align-items: $val;
+    }
+}
+
+// flex wrap
+/* Flex Wrap */
+@each $val in $flex-wrap-values {
+    .flex-#{$val} {
+        flex-wrap: $val;
     }
 }
 
