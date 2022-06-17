@@ -11,6 +11,7 @@ $grid-gaps: (
 );
 
 $layout-values: flex-start, flex-end, center, space-between, space-around;
+$align-items-values: flex-start, flex-end, center, stretch, "base-line";
 
 // base layout
 .container {
@@ -42,6 +43,22 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 @each $val in $layout-values {
     .justify-#{$val} {
         justify-content: $val;
+    }
+}
+
+// align items
+/* Align Items */
+@each $val in $align-items-values {
+    .align-items-#{$val} {
+        align-items: $val;
+    }
+}
+
+// gap
+/* Gap */
+@for $i from 1 through 50 {
+    .flex-gap-#{$i} {
+        gap: #{$i}px;
     }
 }
 
