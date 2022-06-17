@@ -60,6 +60,18 @@ img {
   justify-content: center;
 }
 
+/* Align Items */
+
+.align-items-center {
+  align-items: center;
+}
+
+/* Gap */
+
+.flex-gap-20 {
+  gap: 20px;
+}
+
 /* XS Grid */
 @media (min-width: 0) {
   .col-12-xs {
@@ -252,6 +264,10 @@ img {
 
 .bg-gray-light-7 {
   background-color: #d9d9d9;
+}
+
+.text-hover-black:hover {
+  color: black;
 }
 
 .text-white {
@@ -538,7 +554,7 @@ img {
 }
 
 /* Navbars */
-.navbar .container, .navbar-primary .container, .navbar, .navbar-primary {
+.navbar .container, .navbar-secondary .container, .navbar-primary .container, .navbar, .navbar-secondary, .navbar-primary {
   width: 100%;
   display: flex;
   align-items: center;
@@ -546,15 +562,19 @@ img {
   box-sizing: border-box;
 }
 
-.navbar, .navbar-primary {
+.navbar, .navbar-secondary, .navbar-primary {
   padding: 0.75rem 1.5rem;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
-.navbar .site-title, .navbar-primary .site-title {
+.navbar .site-title, .navbar-secondary .site-title, .navbar-primary .site-title {
   font-size: 1.5rem;
 }
 .navbar-primary {
   background-color: #326dee;
+}
+
+.navbar-secondary {
+  background-color: #1ac888;
 }
 
 /* Badges */
