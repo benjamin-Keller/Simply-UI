@@ -6,7 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../../css/index.css">
-        <script src="https://kit.fontawesome.com/2fdf03cddc.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-tomorrow.min.css">
         <title>Get Started | Simply-UI</title>
     </head>
 <body>
@@ -26,19 +27,52 @@
 
     <div class="container mt-2">
         <div class="row justify-center flex-nowrap">
-            <div class="col-12-xs col-3-md col-3-lg overflow-y-scroll">
+            <div class="col-12-xs col-2-md col-2-lg overflow-y-scroll">
                 <div class="w-100">
-                    <div>
+                    <div class="display-f flex-direction-column pb-2">
                         <h4>Introduction</h4>
-                        <a href="#" class="text-hover-secondary">Getting Started</a>
+                        <a href="#" class="text-secondary">Getting Started</a>
+                        <a href="download.html" class="text-hover-secondary">Download</a>
                     </div>
-                    
+                    <div class="display-f flex-direction-column">
+                        <h4>Layout</h4>
+                        <a href="#" class="text-hover-secondary">Breakpoints</a>
+                        <a href="#" class="text-hover-secondary">Grid</a>
+                    </div>
                 </div>
             </div>
-            <div class="ml-2 col-12-xs col-9-md col-9-lg">
-                <h2>Getting Started</h2>
+            <div class="ml-2 col-12-xs col-10-md col-10-lg">
+                <h1>Getting Started</h1>
+                <h2>Get Setup</h2>
+                <ol>
+                    <li>
+                        <p>Download or Clone the <a href="https://github.com/benjamin-Keller/Simply-UI" class="text-secondary">GitHub Repo</a> and
+                            move the <a href="https://github.com/benjamin-Keller/Simply-UI/tree/master/simply-ui" class="text-secondary">Simply-UI</a> and <a href="https://github.com/benjamin-Keller/Simply-UI/blob/master/gulpfile.js" class="text-secondary">gulpfile.js</a> folder to your project<br>(CDN and NPM coming soon)
+                        </p>
+                    </li>
+                    <li>
+                        <p>In your project directory. Open Terminal and run <code class="text-primary font-consolas">gulp</code> to build .css file.
+                            <br><strong>The file will only have used classes thanks to <a href="https://purgecss.com/plugins/gulp.html" class="text-secondary">gulp-purgecss</a>.</strong>
+                        </p>
+                    </li>
+                    <li>
+                        <p><code class="text-primary font-consolas">&lt;link></code> the built css, by default <code class="text-primary font-consolas">css/index.html</code>, 
+                            in your project's <code class="text-primary font-consolas">&lt;head></code>
+                        </p>
+                        <div>
+                            <pre class="bg-secondary-light-9">
+                                <code>
+<span class="text-primary">&lt;link</span> <span class="text-red">rel="</span>stylesheet<span class="text-red">" href="</span>css/index.css<span class="text-red">"</span><span class="text-primary">></span>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                </ol>
             </div>
         </div>
     </div>
+
+    <script src="https://kit.fontawesome.com/2fdf03cddc.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-core.min.js" referrerpolicy="no-referrer"></script>
 </body>
 </html>
