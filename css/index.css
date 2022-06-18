@@ -72,6 +72,12 @@ img {
   flex-wrap: nowrap;
 }
 
+/* Flex Direction */
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
 /* Gap */
 
 .flex-gap-20 {
@@ -116,10 +122,10 @@ img {
     flex-grow: 0;
     width: 50%;
   }
-  .col-9-md {
+  .col-10-md {
     box-sizing: border-box;
     flex-grow: 0;
-    width: 75%;
+    width: 83.3333333333%;
   }
 }
 /* LG Grid */
@@ -129,10 +135,10 @@ img {
     flex-grow: 0;
     width: 25%;
   }
-  .col-9-lg {
+  .col-10-lg {
     box-sizing: border-box;
     flex-grow: 0;
-    width: 75%;
+    width: 83.3333333333%;
   }
 }
 /* XL Grid */

@@ -13,6 +13,7 @@ $grid-gaps: (
 $layout-values: flex-start, flex-end, center, space-between, space-around;
 $align-items-values: flex-start, flex-end, center, stretch, "base-line";
 $flex-wrap-values: wrap, nowrap;
+$flex-direction: row, column, row-reverse, column-reverse;
 
 // base layout
 .container {
@@ -60,6 +61,14 @@ $flex-wrap-values: wrap, nowrap;
 @each $val in $flex-wrap-values {
     .flex-#{$val} {
         flex-wrap: $val;
+    }
+}
+
+// flex direction
+/* Flex Direction */
+@each $val in $flex-direction {
+    .flex-direction-#{$val} {
+        flex-direction: $val;
     }
 }
 
