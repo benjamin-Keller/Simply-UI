@@ -6,7 +6,7 @@ buildStyles = () => {
     return src('sass/**/*.scss')
         .pipe(sass())
         // .pipe(purgecss({ content: ['*.html', '*/*.html', '*/**/*.html']}))
-        .pipe(dest('css'))
+        .pipe(dest('dist/css'))
 }
 
 watchTask = () => {
