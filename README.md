@@ -3,7 +3,7 @@ Simple UI package for easy-to-use mobile-friendly simple designs
 
 ## Installation
 
-### NPM
+### NPM (WIP)
 - Download release.
 - Run `npm i simply --save` on your project.
 - Add a link to the Simply-UI's `dist/css/index.css` in your `<head>`.
