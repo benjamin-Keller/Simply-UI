@@ -5,11 +5,25 @@ Simple UI package for easy-to-use mobile-friendly simple designs
 
 ### CDN with JsDeliver or UNPKG
 Easy-to-use link to instantly get access to Simply-UI 
-- Add a link to:
-  - (JsDeliver - minified) `https://cdn.jsdelivr.net/npm/simply-ui@1.0.0/dist/css/simply.css`
-  - (JsDeliver) `https://cdn.jsdelivr.net/npm/simply-ui@1.0.0/dist/css/simply.min.css`
-  - (UNPKG) `https://unpkg.com/simply-ui@1.0.0/dist/css/simply.css`
-  
+- Add a `<link>` to:
+  - (JsDeliver)
+    - Full (81.3 KB)
+  ``` HTTP
+  https://cdn.jsdelivr.net/npm/simply-ui@1.1.0/dist/css/simply.css
+  ```
+    - Minified (65.1 KB)
+  ``` HTTP
+  https://cdn.jsdelivr.net/npm/simply-ui@1.1.0/dist/css/simply.min.css
+  ```
+  - (UNPKG)
+    - Full (81.3 KB) 
+  ``` HTTP
+  https://unpkg.com/simply-ui@1.1.0/dist/css/simply.css
+  ```
+    - Minified (65.1 KB) 
+  ``` HTTP
+  https://unpkg.com/simply-ui@1.1.0/dist/css/simply.min.css
+  ```
   in your project's `<head>`.
 - Start using Simply's stylings!
 
@@ -51,3 +65,13 @@ See it in action with this [Demo](https://benjamin-keller.github.io/Simply-UI/)
 
 Also see sample [Homepage](https://benjamin-keller.github.io/Simply-UI/samples/homepage.html)
 
+## Links
+
+- JsDeliver:
+  - https://cdn.jsdelivr.net/npm/simply-ui@1.1.0/dist/css/simply.css
+  - https://cdn.jsdelivr.net/npm/simply-ui@1.1.0/dist/css/simply.min.css
+- UNPKG:
+  - https://unpkg.com/simply-ui@1.1.0/dist/css/simply.css
+  - https://unpkg.com/simply-ui@1.1.0/dist/css/simply.min.css
+- NPMJS:
+  - https://www.npmjs.com/package/simply-ui/v/1.1.0
