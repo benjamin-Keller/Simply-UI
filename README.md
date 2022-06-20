@@ -8,20 +8,20 @@ Easy-to-use link to instantly get access to Simply-UI
 - Add a `<link>` to:
   - (JsDeliver)
     - Full (81.3 KB)
-  ``` HTTP
+  ``` 
   https://cdn.jsdelivr.net/npm/simply-ui@1.1.0/dist/css/simply.css
   ```
     - Minified (65.1 KB)
-  ``` HTTP
+  ``` 
   https://cdn.jsdelivr.net/npm/simply-ui@1.1.0/dist/css/simply.min.css
   ```
   - (UNPKG)
     - Full (81.3 KB) 
-  ``` HTTP
+  ``` 
   https://unpkg.com/simply-ui@1.1.0/dist/css/simply.css
   ```
     - Minified (65.1 KB) 
-  ``` HTTP
+  ``` 
   https://unpkg.com/simply-ui@1.1.0/dist/css/simply.min.css
   ```
   in your project's `<head>`.
