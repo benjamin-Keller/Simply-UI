@@ -1,13 +1,13 @@
 # Simply-UI
 Simple UI package for easy-to-use mobile-friendly simple designs
 
-## Installation
+# Installation
 
-### CDN with JsDeliver or UNPKG
+## CDN with JsDeliver or UNPKG
 Easy-to-use link to instantly get access to Simply-UI 
 - Add a `<link>` to:
-  - (JsDeliver)
-    - Full (81.3 KB)
+### (JsDeliver)
+  - Full (81.3 KB)
   ``` 
   https://cdn.jsdelivr.net/npm/simply-ui@1.1.0/dist/css/simply.css
   ```
@@ -15,19 +15,19 @@ Easy-to-use link to instantly get access to Simply-UI
   ``` 
   https://cdn.jsdelivr.net/npm/simply-ui@1.1.0/dist/css/simply.min.css
   ```
-  - (UNPKG)
-    - Full (81.3 KB) 
+### (UNPKG)
+  - Full (81.3 KB) 
   ``` 
   https://unpkg.com/simply-ui@1.1.0/dist/css/simply.css
   ```
-    - Minified (65.1 KB) 
-  ``` 
+  - Minified (65.1 KB) 
+  ``` HTTP
   https://unpkg.com/simply-ui@1.1.0/dist/css/simply.min.css
   ```
   in your project's `<head>`.
 - Start using Simply's stylings!
 
-#### Usage
+### Usage
 ``` html
 <head>
     <meta charset="UTF-8">
@@ -38,14 +38,14 @@ Easy-to-use link to instantly get access to Simply-UI
 </head>
 ```
 
-### NPM (WIP)
+## NPM (WIP)
 - Download release.
 - Run `npm i simply-ui --save` on your project.
 - Add a link to the Simply-UI's `dist/css/index.css` in your `<head>`.
 
 _I have never posted to NPM or used anything from it before, if you can verify that you can use the library from it I will appreciate it greatly! <3_
 
-#### Usage
+### Usage
 ``` javascript
 import { simply } from 'simply';
 
@@ -54,18 +54,18 @@ simply({
     scrollbar_color: 'primary'
 });
 ```
-#### Options
+### Options
 
 * *scrollbar* - _default / simply_ (Default's the body's scrollbars) 
 * *scrollbar_color* - Any color under $colors variable (Sets the scrollbars default color) 
 
-## Demo
+# Demo
 
 See it in action with this [Demo](https://benjamin-keller.github.io/Simply-UI/)
 
 Also see sample [Homepage](https://benjamin-keller.github.io/Simply-UI/samples/homepage.html)
 
-## Links
+# Links
 
 - JsDeliver:
   - https://cdn.jsdelivr.net/npm/simply-ui@1.1.0/dist/css/simply.css
