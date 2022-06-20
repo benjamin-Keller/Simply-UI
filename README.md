@@ -3,9 +3,14 @@ Simple UI package for easy-to-use mobile-friendly simple designs
 
 ## Installation
 
-### UNPKG
+### CDN with JsDeliver or UNPKG
 Easy-to-use link to instantly get access to Simply-UI 
-- Add a link to `https://github.com/benjamin-Keller/Simply-UI` in your project's `<head>`.
+- Add a link to:
+  - (JsDeliver - minified) `https://cdn.jsdelivr.net/npm/simply-ui@1.0.0/dist/css/simply.css`
+  - (JsDeliver) `https://cdn.jsdelivr.net/npm/simply-ui@1.0.0/dist/css/simply.min.css`
+  - (UNPKG) `https://unpkg.com/simply-ui@1.0.0/dist/css/simply.css`
+  
+  in your project's `<head>`.
 - Start using Simply's stylings!
 
 #### Usage
@@ -14,12 +19,12 @@ Easy-to-use link to instantly get access to Simply-UI
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/simply-ui@1.0.0/dist/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simply-ui@1.0.0/dist/css/simply.min.css">
     <title>Simply-UI Demo</title>
 </head>
 ```
 
-### NPM
+### NPM (WIP)
 - Download release.
 - Run `npm i simply-ui --save` on your project.
 - Add a link to the Simply-UI's `dist/css/index.css` in your `<head>`.
@@ -40,12 +45,6 @@ simply({
 * *scrollbar* - _default / simply_ (Default's the body's scrollbars) 
 * *scrollbar_color* - Any color under $colors variable (Sets the scrollbars default color) 
 
-### Gulp
-- Download release.
-- Run `npm install` on your project.
-- Add a link to the Simply-UI's `dist/css/index.css` in your `<head>`.
-- Run your project with `gulp` for development,
-  - gulp-purgecss will only build used css classes to save space.
 ## Demo
 
 See it in action with this [Demo](https://benjamin-keller.github.io/Simply-UI/)
