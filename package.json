@@ -1,6 +1,6 @@
 {
   "name": "simply-ui",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Simple UI package for easy-to-use mobile-friendly simple designs",
   "main": "dist/js/simply-ui.js",
   "scripts": {
@@ -322,5 +322,5 @@
   "bugs": {
     "url": "https://github.com/benjamin-Keller/Simply-UI/issues"
   },
-  "homepage": "https://github.com/benjamin-Keller/Simply-UI#readme"
+  "homepage": "https://benjamin-keller.github.io/Simply-UI/"
 }
