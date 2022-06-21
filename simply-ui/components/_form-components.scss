@@ -1,0 +1,31 @@
+@use "sass:math";
+
+@mixin input($border-color: map-get($colors, "gray")) {
+    border: $base-border-thickness solid $border-color;
+    border-radius: $base-input-radius;
+    height: calc($base-font-size + 0.75rem);
+    width: 100%;
+    line-height: calc($base-font-size + math.div($base-font-size, 3));
+    margin-bottom: $base-margin;
+
+    &:focus-visible {
+        box-shadow: 0 0 0px 4px rgb($border-color, 10%);
+        outline: none;
+    }
+}
+
+.form-input {
+    @include input();
+}
+
+@each $key,
+$val in $colors {
+    .form-input-#{$key} {
+        @include input($val);
+    }
+
+    .form-input-#{$key}-focus:focus-visible {
+        box-shadow: 0 0 0px 4px rgb($val, 10%); 
+    }
+
+}

@@ -108,6 +108,11 @@ img {
     flex-grow: 0;
     width: 83.3333333333%;
   }
+  .col-12-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
 }
 @media (min-width: 960px) {
   .col-2-lg {
@@ -124,6 +129,11 @@ img {
     box-sizing: border-box;
     flex-grow: 0;
     width: 83.3333333333%;
+  }
+  .col-12-lg {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -737,6 +747,20 @@ img {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   border-color: #90f;
+}
+
+.form-input {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 1.75rem;
+  width: 100%;
+  line-height: 1.3333333333rem;
+  margin-bottom: 0.75rem;
+}
+
+.form-input:focus-visible {
+  box-shadow: 0 0 0 4px rgba(128, 128, 128, 0.1);
+  outline: 0;
 }
 
 .p-0 {
