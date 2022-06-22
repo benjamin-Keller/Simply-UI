@@ -749,7 +749,7 @@ img {
   border-color: #90f;
 }
 
-.form-input {
+input[type=text i].form-input {
   border: 1px solid grey;
   border-radius: 5px;
   height: 1.75rem;
@@ -758,9 +758,81 @@ img {
   margin-bottom: 0.75rem;
 }
 
-.form-input:focus-visible {
+input[type=text i].form-input:focus-visible {
   box-shadow: 0 0 0 4px rgba(128, 128, 128, 0.1);
   outline: 0;
+}
+
+input[type=text i].form-input-primary {
+  border: 1px solid #326dee;
+  border-radius: 5px;
+  height: 1.75rem;
+  width: 100%;
+  line-height: 1.3333333333rem;
+  margin-bottom: 0.75rem;
+}
+
+input[type=text i].form-input-primary:focus-visible {
+  box-shadow: 0 0 0 4px rgba(50, 109, 238, 0.1);
+  outline: 0;
+}
+
+input[type=text i].form-input-primary-focus:focus-visible {
+  box-shadow: 0 0 0 4px rgba(50, 109, 238, 0.1);
+}
+
+input[type=text i].form-input-secondary {
+  border: 1px solid #1ac888;
+  border-radius: 5px;
+  height: 1.75rem;
+  width: 100%;
+  line-height: 1.3333333333rem;
+  margin-bottom: 0.75rem;
+}
+
+input[type=text i].form-input-secondary:focus-visible {
+  box-shadow: 0 0 0 4px rgba(26, 200, 136, 0.1);
+  outline: 0;
+}
+
+input[type=text i].form-input-secondary-focus:focus-visible {
+  box-shadow: 0 0 0 4px rgba(26, 200, 136, 0.1);
+}
+
+input[type=text i].form-input-error {
+  border: 1px solid #d32752;
+  border-radius: 5px;
+  height: 1.75rem;
+  width: 100%;
+  line-height: 1.3333333333rem;
+  margin-bottom: 0.75rem;
+}
+
+input[type=text i].form-input-error:focus-visible {
+  box-shadow: 0 0 0 4px rgba(211, 39, 82, 0.1);
+  outline: 0;
+}
+
+input[type=text i].form-input-error-focus:focus-visible {
+  box-shadow: 0 0 0 4px rgba(211, 39, 82, 0.1);
+}
+
+input[type=text i].form-input-info {
+  border: 1px solid #f6c31c;
+  border-radius: 5px;
+  height: 1.75rem;
+  width: 100%;
+  line-height: 1.3333333333rem;
+  margin-bottom: 0.75rem;
+}
+
+input[type=text i].form-input-info:focus-visible {
+  box-shadow: 0 0 0 4px rgba(246, 195, 28, 0.1);
+  outline: 0;
+}
+
+input[type=text i].form-input-info-focus:focus-visible {
+  box-shadow: 0 0 0 4px rgba(246, 195, 28, 0.1);
 }
 
 .p-0 {

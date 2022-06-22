@@ -14,17 +14,17 @@
     }
 }
 
-.form-input {
+input[type="text" i].form-input {
     @include input();
 }
 
 @each $key,
 $val in $colors {
-    .form-input-#{$key} {
+    input[type="text" i].form-input-#{$key} {
         @include input($val);
     }
 
-    .form-input-#{$key}-focus:focus-visible {
+    input[type="text" i].form-input-#{$key}-focus:focus-visible {
         box-shadow: 0 0 0px 4px rgb($val, 10%); 
     }
 
