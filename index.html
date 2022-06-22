@@ -191,43 +191,93 @@
 
         <!-- Form -->
         <h2 class="mb-2">Form</h2>
-        <div class="row">
-            <div class="col-12-xs col-12-md col-12-lg">
+
+        <div class="row gap-2">
+            <div class="col-12-xs col-12-sm col-12-xl pb-0">
                 <label for="fname">Regular text input</label>
-                <input type="text" id="fname" name="fname" class="form-input">
-                <label>Colored text input</label>
-                <div class="row gap-2">
-                    <div class="col-12-xs col-6-sm col-3-xl">
-                        <input type="text" id="lname" name="lname" class="form-input-primary">
-                    </div>
-                    <div class="col-12-xs col-6-sm col-3-xl">
-                        <input type="text" id="lname" name="lname" class="form-input-secondary">
-                    </div>
-                    <div class="col-12-xs col-6-sm col-3-xl">
-                        <input type="text" id="lname" name="lname" class="form-input-error">
-                    </div>
-                    <div class="col-12-xs col-6-sm col-3-xl">
-                        <input type="text" id="lname" name="lname" class="form-input-info">
-                    </div>
-                </div>
-                <label>Colored text input on focus</label>
-                <div class="row gap-2">
-                    <div class="col-12-xs col-6-sm col-3-xl">
-                        <input type="text" id="lname" name="lname" class="form-input form-input-primary-focus">
-                    </div>
-                    <div class="col-12-xs col-6-sm col-3-xl">
-                        <input type="text" id="lname" name="lname" class="form-input form-input-secondary-focus">
-                    </div>
-                    <div class="col-12-xs col-6-sm col-3-xl">
-                        <input type="text" id="lname" name="lname" class="form-input form-input-error-focus">
-                    </div>
-                    <div class="col-12-xs col-6-sm col-3-xl">
-                        <input type="text" id="lname" name="lname" class="form-input form-input-info-focus">
-                    </div>
-                </div>
-
             </div>
+            <div class="col-12-xs col-6-sm col-3-xl">
+                <input type="text" id="fname" name="fname" class="form-input">
+            </div>
+        </div>
+        <div class="row gap-2">
+            <div class="col-12-xs col-12-sm col-12-xl pb-0">
+                <label>Colored text input</label>
+            </div>
+            <div class="col-12-xs col-6-sm col-3-xl">
+                <input type="text" id="lname" name="lname" class="form-input-primary">
+            </div>
+            <div class="col-12-xs col-6-sm col-3-xl">
+                <input type="text" id="lname" name="lname" class="form-input-secondary">
+            </div>
+            <div class="col-12-xs col-6-sm col-3-xl">
+                <input type="text" id="lname" name="lname" class="form-input-error">
+            </div>
+            <div class="col-12-xs col-6-sm col-3-xl">
+                <input type="text" id="lname" name="lname" class="form-input-info">
+            </div>
+        </div>
 
+        <div class="row gap-2">
+            <div class="col-12-xs col-12-sm col-12-xl pb-0">
+                <label>Colored text input on focus</label>
+            </div>
+            <div class="col-12-xs col-6-sm col-3-xl">
+                <input type="text" id="lname" name="lname" class="form-input form-input-primary-focus">
+            </div>
+            <div class="col-12-xs col-6-sm col-3-xl">
+                <input type="text" id="lname" name="lname" class="form-input form-input-secondary-focus">
+            </div>
+            <div class="col-12-xs col-6-sm col-3-xl">
+                <input type="text" id="lname" name="lname" class="form-input form-input-error-focus">
+            </div>
+            <div class="col-12-xs col-6-sm col-3-xl">
+                <input type="text" id="lname" name="lname" class="form-input form-input-info-focus">
+            </div>
+        </div>
+
+        <div class="row gap-2">
+            <div class="col-12-xs col-12-md col-12-lg pb-0">
+                <label>Floating label</label>
+            </div>
+            <div class="col-12-xs col-12-md col-12-lg pb-0">
+                <div class="floating-label">
+                    <input placeholder="Text to replace" type="text" name="float-default" id="float-default"
+                        autocomplete="off" class="form-input">
+                    <label for="float-default" class="floating-label-text">Text to replace:</label>
+                </div>
+            </div>
+            <div class="col-12-xs col-12-md col-12-lg pb-0">
+                <label>Floating labels with colors</label>
+            </div>
+            <div class="col-12-xs col-6-sm col-3-xl">
+                <div class="floating-label">
+                    <input placeholder="Text to replace" type="text" name="float-default-primary"
+                        id="float-default-primary" autocomplete="off" class="form-input-primary">
+                    <label for="float-default-primary" class="floating-label-text">Text to replace:</label>
+                </div>
+            </div>
+            <div class="col-12-xs col-6-sm col-3-xl">
+                <div class="floating-label">
+                    <input placeholder="Text to replace" type="text" name="float-default-secondary"
+                        id="float-default-secondary" autocomplete="off" class="form-input-secondary">
+                    <label for="float-default-secondary" class="floating-label-text">Text to replace:</label>
+                </div>
+            </div>
+            <div class="col-12-xs col-6-sm col-3-xl">
+                <div class="floating-label">
+                    <input placeholder="Text to replace" type="text" name="float-default-error" id="float-default-error"
+                        autocomplete="off" class="form-input-error">
+                    <label for="float-default-error" class="floating-label-text">Text to replace:</label>
+                </div>
+            </div>
+            <div class="col-12-xs col-6-sm col-3-xl">
+                <div class="floating-label">
+                    <input placeholder="Text to replace" type="text" name="float-default-info" id="float-default-info"
+                        autocomplete="off" class="form-input-info">
+                    <label for="float-default-info" class="floating-label-text">Text to replace:</label>
+                </div>
+            </div>
         </div>
 
         <hr class="mt-4 mb-4" />
