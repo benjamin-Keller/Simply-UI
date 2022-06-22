@@ -23,19 +23,19 @@ Easy-to-use link to instantly get access to Simply-UI
 - Add a `<link>` to:
 ### (JsDeliver)
 ``` 
-- Full (81.3 KB)
-  https://cdn.jsdelivr.net/npm/simply-ui@1.1.5/dist/css/simply.css
+- Full (87.3 KB)
+  https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.css
 
-- Minified (65.1 KB)
-  https://cdn.jsdelivr.net/npm/simply-ui@1.1.5/dist/css/simply.min.css
+- Minified (70.1 KB)
+  https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.min.css
 ```
 ### (UNPKG)
 ``` 
-- Full (81.3 KB) 
-  https://unpkg.com/simply-ui@1.1.5/dist/css/simply.css
+- Full (87.3 KB) 
+  https://unpkg.com/simply-ui@1.1.6/dist/css/simply.css
 
-- Minified (65.1 KB) 
-  https://unpkg.com/simply-ui@1.1.5/dist/css/simply.min.css
+- Minified (70.1 KB) 
+  https://unpkg.com/simply-ui@1.1.6/dist/css/simply.min.css
 ```
   in your project's `<head>`.
 - Start using Simply's stylings!
@@ -46,7 +46,7 @@ Easy-to-use link to instantly get access to Simply-UI
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simply-ui@1.1.5/dist/css/simply.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.min.css">
     <title>Simply-UI Demo</title>
 </head>
 ```
@@ -81,10 +81,10 @@ Also see sample [Homepage](https://benjamin-keller.github.io/Simply-UI/samples/h
 # Links
 
 - JsDeliver:
-  - https://cdn.jsdelivr.net/npm/simply-ui@1.1.5/dist/css/simply.css
-  - https://cdn.jsdelivr.net/npm/simply-ui@1.1.5/dist/css/simply.min.css
+  - https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.css
+  - https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.min.css
 - UNPKG:
-  - https://unpkg.com/simply-ui@1.1.5/dist/css/simply.css
-  - https://unpkg.com/simply-ui@1.1.5/dist/css/simply.min.css
+  - https://unpkg.com/simply-ui@1.1.6/dist/css/simply.css
+  - https://unpkg.com/simply-ui@1.1.6/dist/css/simply.min.css
 - NPMJS:
-  - https://www.npmjs.com/package/simply-ui/v/1.1.5
+  - https://www.npmjs.com/package/simply-ui
