@@ -20,6 +20,9 @@
                 <li class="ml-1 text-hover-black">
                     <a href="https://github.com/benjamin-Keller/Simply-UI"><i class="fa-brands fa-github"></i></a>
                 </li>
+                <li class="ml-1 text-hover-black">
+                    <a href="https://www.npmjs.com/package/simply-ui"><i class="fa-brands fa-npm"></i></a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -30,19 +33,60 @@
                 <div class="w-100">
                     <div class="display-f flex-direction-column pb-2">
                         <h4>Introduction</h4>
-                        <a href="#" class="text-secondary">Getting Started <span class="badge-secondary text-white">WIP</span></a>
-                        <a href="download.html" class="text-hover-secondary">Download <span class="badge-secondary text-white">WIP</span></a>
+                        <a href="#" class="text-secondary">Getting Started <span
+                                class="badge-secondary text-white">WIP</span></a>
+                        <a href="download.html" class="text-hover-secondary">Download <span
+                                class="badge-secondary text-white">WIP</span></a>
                     </div>
                     <div class="display-f flex-direction-column">
                         <h4>Layout</h4>
-                        <a href="../Layout/breakpoints.html" class="text-hover-secondary">Breakpoints <span class="badge-secondary text-white">WIP</span></a>
-                        <a href="../Layout/grid.html" class="text-hover-secondary">Grid <span class="badge-secondary text-white">WIP</span></a>
+                        <a href="../Layout/breakpoints.html" class="text-hover-secondary">Breakpoints <span
+                                class="badge-secondary text-white">WIP</span></a>
+                        <a href="../Layout/grid.html" class="text-hover-secondary">Grid <span
+                                class="badge-secondary text-white">WIP</span></a>
                     </div>
                 </div>
             </div>
             <div class="ml-2 col-12-xs col-10-md col-10-lg">
                 <h1>Getting Started</h1>
                 <h2>Get Setup</h2>
+                <h3>CDN</h3>
+                <p><code class="text-primary font-consolas">&lt;link></code> the CDN,
+                    in your project's <code class="text-primary font-consolas">&lt;head></code>
+                </p>
+                <strong>JsDeliver:</strong>
+                <ol>
+                    <li>Full (87.3 KB): <a href="http://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.css"
+                            class="text-secondary">https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.css</a>
+                    </li>
+                    <li>Min (70.1 KB): <a href="http://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.min.css"
+                            class="text-secondary">https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.min.css</a>
+                    </li>
+                </ol>
+
+                <strong>UNPKG:</strong>
+                <ol>
+                    <li>Full (87.3 KB): <a href="http://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.css"
+                            class="text-secondary">https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.css</a>
+                    </li>
+                    <li>Min (70.1 KB): <a href="http://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.min.css"
+                            class="text-secondary">https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.min.css</a>
+                    </li>
+                </ol>
+<pre class="bg-secondary-light-9 pl-2 pr-2">
+<code style="overflow-x: scroll;">
+<span class="text-primary">&lt;head></span>
+    <span class="text-primary">&lt;meta</span> <span class="text-red">charset="</span>UTF-8<span class="text-red">"</span><span class="text-primary">></span>
+    <span class="text-primary">&lt;meta</span> <span class="text-red">http-equiv="</span>X-UA-Compatible<span class="text-red">" content="</span>IE=edge<span class="text-red">"</span><span class="text-primary">></span>
+    <span class="text-primary">&lt;meta</span> <span class="text-red">name="</span>viewport<span class="text-red">" content="</span>width=device-width, initial-scale=1.0<span class="text-red">"</span><span class="text-primary">></span>
+    <span class="text-primary">&lt;link</span> <span class="text-red">rel="</span>stylesheet<span class="text-red">" href="</span>https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.min.css<span class="text-red">"</span><span class="text-primary">></span>
+    <span class="text-primary">&lt;title></span>Simply-UI Demo<span class="text-primary">&lt;/title></span>
+<span class="text-primary">&lt;/head></span>
+</code>
+</pre>
+
+
+                <h3 class="mt-2">GitHub</h3>
                 <ol>
                     <li>
                         <p>Download or Clone the <a href="https://github.com/benjamin-Keller/Simply-UI"
@@ -57,24 +101,24 @@
                     <li>
                         <p>In your project directory. Open Terminal and run <code
                                 class="text-primary font-consolas">gulp</code> to build .css file.
-                            <br><strong>The file will only have used classes thanks to <a
+                            <br><strong>If you use simply.purged.css the file will only have used classes thanks to <a
                                     href="https://purgecss.com/plugins/gulp.html"
                                     class="text-secondary">gulp-purgecss</a>.</strong>
                         </p>
                     </li>
                     <li>
                         <p><code class="text-primary font-consolas">&lt;link></code> the built css, by default <code
-                                class="text-primary font-consolas">css/index.html</code>,
+                                class="text-primary font-consolas">dist/css/simply.html</code>,
                             in your project's <code class="text-primary font-consolas">&lt;head></code>
                         </p>
                         <div>
-                            <pre class="bg-secondary-light-9 pl-2 pr-2" >
-                                <code style="overflow-x: scroll;">
+<pre class="bg-secondary-light-9 pl-2 pr-2">
+<code style="overflow-x: scroll;">
 <span class="text-primary">&lt;head></span>
     <span class="text-primary">&lt;meta</span> <span class="text-red">charset="</span>UTF-8<span class="text-red">"</span><span class="text-primary">></span>
     <span class="text-primary">&lt;meta</span> <span class="text-red">http-equiv="</span>X-UA-Compatible<span class="text-red">" content="</span>IE=edge<span class="text-red">"</span><span class="text-primary">></span>
     <span class="text-primary">&lt;meta</span> <span class="text-red">name="</span>viewport<span class="text-red">" content="</span>width=device-width, initial-scale=1.0<span class="text-red">"</span><span class="text-primary">></span>
-    <span class="text-primary">&lt;link</span> <span class="text-red">rel="</span>stylesheet<span class="text-red">" href="</span>css/index.css<span class="text-red">"</span><span class="text-primary">></span>
+    <span class="text-primary">&lt;link</span> <span class="text-red">rel="</span>stylesheet<span class="text-red">" href="</span>dist/css/simply.css<span class="text-red">"</span><span class="text-primary">></span>
     <span class="text-primary">&lt;title></span>Simply-UI Demo<span class="text-primary">&lt;/title></span>
 <span class="text-primary">&lt;/head></span>
 </code>
