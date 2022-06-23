@@ -1,12 +1,12 @@
 @use "sass:math";
+$gray: map-get($colors, "gray");
 
-@mixin input($border-color: map-get($colors, "gray")) {
+@mixin inputText($border-color: $gray) {
     border: $base-border-thickness solid $border-color;
     border-radius: $base-input-radius;
     height: calc($base-font-size + 0.75rem);
     width: 100%;
     line-height: calc($base-font-size + math.div($base-font-size, 3));
-    margin-bottom: $base-margin;
 
     &:focus-visible {
         box-shadow: 0 0 0px 4px rgb($border-color, 10%);
@@ -14,18 +14,71 @@
     }
 }
 
-input[type="text" i].form-input {
-    @include input();
+@mixin inputCheck($color: $gray) {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 1.5px solid $gray;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+
+    &::before {
+        content: "";
+        width: 0.65em;
+        height: 0.65em;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1em 1em $color;
+        /* Windows High Contrast Mode */
+        background-color: CanvasText;
+        transform-origin: bottom left;
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    }
+
+    &:focus {
+        box-shadow: 0 0 0px 4px rgb($color, 10%);
+    }
+
+    &:disabled {
+        color: $gray;
+        cursor: not-allowed;
+
+        &::before {
+            box-shadow: inset 1em 1em $gray;
+        }
+    }
+}
+
+input[type="text"i].form-input {
+    @include inputText();
+}
+
+input[type="checkbox"].form-input {
+    @include inputCheck();
 }
 
 @each $key,
 $val in $colors {
-    input[type="text" i].form-input-#{$key} {
-        @include input($val);
+    input[type="text"i].form-input-#{$key} {
+        @include inputText($val);
     }
 
-    input[type="text" i].form-input-#{$key}-focus:focus-visible {
-        box-shadow: 0 0 0px 4px rgb($val, 10%); 
+    input[type="text"i].form-input-#{$key}-focus:focus-visible {
+        box-shadow: 0 0 0px 4px rgb($val, 10%);
+    }
+
+    input[type="checkbox"].form-input-#{$key} {
+        @include inputCheck($val);
+    }
+
+    input[type="checkbox"]:checked::before {
+        transform: scale(1);
     }
 
 }

@@ -5136,11 +5136,47 @@ input[type=text i].form-input {
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 input[type=text i].form-input:focus-visible {
   box-shadow: 0 0 0px 4px rgba(128, 128, 128, 0.1);
   outline: none;
+}
+
+input[type=checkbox].form-input {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid #808080;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox].form-input::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #808080;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type=checkbox].form-input:focus {
+  box-shadow: 0 0 0px 4px rgba(128, 128, 128, 0.1);
+}
+input[type=checkbox].form-input:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+input[type=checkbox].form-input:disabled::before {
+  box-shadow: inset 1em 1em #808080;
 }
 
 input[type=text i].form-input-primary {
@@ -5149,7 +5185,6 @@ input[type=text i].form-input-primary {
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 input[type=text i].form-input-primary:focus-visible {
   box-shadow: 0 0 0px 4px rgba(50, 109, 238, 0.1);
@@ -5160,13 +5195,53 @@ input[type=text i].form-input-primary-focus:focus-visible {
   box-shadow: 0 0 0px 4px rgba(50, 109, 238, 0.1);
 }
 
+input[type=checkbox].form-input-primary {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid #808080;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox].form-input-primary::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #326dee;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type=checkbox].form-input-primary:focus {
+  box-shadow: 0 0 0px 4px rgba(50, 109, 238, 0.1);
+}
+input[type=checkbox].form-input-primary:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+input[type=checkbox].form-input-primary:disabled::before {
+  box-shadow: inset 1em 1em #808080;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-secondary {
   border: 1px solid #1ac888;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 input[type=text i].form-input-secondary:focus-visible {
   box-shadow: 0 0 0px 4px rgba(26, 200, 136, 0.1);
@@ -5177,13 +5252,53 @@ input[type=text i].form-input-secondary-focus:focus-visible {
   box-shadow: 0 0 0px 4px rgba(26, 200, 136, 0.1);
 }
 
+input[type=checkbox].form-input-secondary {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid #808080;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox].form-input-secondary::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #1ac888;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type=checkbox].form-input-secondary:focus {
+  box-shadow: 0 0 0px 4px rgba(26, 200, 136, 0.1);
+}
+input[type=checkbox].form-input-secondary:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+input[type=checkbox].form-input-secondary:disabled::before {
+  box-shadow: inset 1em 1em #808080;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-error {
   border: 1px solid #d32752;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 input[type=text i].form-input-error:focus-visible {
   box-shadow: 0 0 0px 4px rgba(211, 39, 82, 0.1);
@@ -5194,13 +5309,53 @@ input[type=text i].form-input-error-focus:focus-visible {
   box-shadow: 0 0 0px 4px rgba(211, 39, 82, 0.1);
 }
 
+input[type=checkbox].form-input-error {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid #808080;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox].form-input-error::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #d32752;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type=checkbox].form-input-error:focus {
+  box-shadow: 0 0 0px 4px rgba(211, 39, 82, 0.1);
+}
+input[type=checkbox].form-input-error:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+input[type=checkbox].form-input-error:disabled::before {
+  box-shadow: inset 1em 1em #808080;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-info {
   border: 1px solid #f6c31c;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 input[type=text i].form-input-info:focus-visible {
   box-shadow: 0 0 0px 4px rgba(246, 195, 28, 0.1);
@@ -5211,13 +5366,53 @@ input[type=text i].form-input-info-focus:focus-visible {
   box-shadow: 0 0 0px 4px rgba(246, 195, 28, 0.1);
 }
 
+input[type=checkbox].form-input-info {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid #808080;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox].form-input-info::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #f6c31c;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type=checkbox].form-input-info:focus {
+  box-shadow: 0 0 0px 4px rgba(246, 195, 28, 0.1);
+}
+input[type=checkbox].form-input-info:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+input[type=checkbox].form-input-info:disabled::before {
+  box-shadow: inset 1em 1em #808080;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-blue {
   border: 1px solid #1919e6;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 input[type=text i].form-input-blue:focus-visible {
   box-shadow: 0 0 0px 4px rgba(25, 25, 230, 0.1);
@@ -5228,13 +5423,53 @@ input[type=text i].form-input-blue-focus:focus-visible {
   box-shadow: 0 0 0px 4px rgba(25, 25, 230, 0.1);
 }
 
+input[type=checkbox].form-input-blue {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid #808080;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox].form-input-blue::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #1919e6;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type=checkbox].form-input-blue:focus {
+  box-shadow: 0 0 0px 4px rgba(25, 25, 230, 0.1);
+}
+input[type=checkbox].form-input-blue:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+input[type=checkbox].form-input-blue:disabled::before {
+  box-shadow: inset 1em 1em #808080;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-red {
   border: 1px solid #e61919;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 input[type=text i].form-input-red:focus-visible {
   box-shadow: 0 0 0px 4px rgba(230, 25, 25, 0.1);
@@ -5245,13 +5480,53 @@ input[type=text i].form-input-red-focus:focus-visible {
   box-shadow: 0 0 0px 4px rgba(230, 25, 25, 0.1);
 }
 
+input[type=checkbox].form-input-red {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid #808080;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox].form-input-red::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #e61919;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type=checkbox].form-input-red:focus {
+  box-shadow: 0 0 0px 4px rgba(230, 25, 25, 0.1);
+}
+input[type=checkbox].form-input-red:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+input[type=checkbox].form-input-red:disabled::before {
+  box-shadow: inset 1em 1em #808080;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-yellow {
   border: 1px solid #e6e619;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 input[type=text i].form-input-yellow:focus-visible {
   box-shadow: 0 0 0px 4px rgba(230, 230, 25, 0.1);
@@ -5262,13 +5537,53 @@ input[type=text i].form-input-yellow-focus:focus-visible {
   box-shadow: 0 0 0px 4px rgba(230, 230, 25, 0.1);
 }
 
+input[type=checkbox].form-input-yellow {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid #808080;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox].form-input-yellow::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #e6e619;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type=checkbox].form-input-yellow:focus {
+  box-shadow: 0 0 0px 4px rgba(230, 230, 25, 0.1);
+}
+input[type=checkbox].form-input-yellow:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+input[type=checkbox].form-input-yellow:disabled::before {
+  box-shadow: inset 1em 1em #808080;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-green {
   border: 1px solid #19e635;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 input[type=text i].form-input-green:focus-visible {
   box-shadow: 0 0 0px 4px rgba(25, 230, 53, 0.1);
@@ -5279,13 +5594,53 @@ input[type=text i].form-input-green-focus:focus-visible {
   box-shadow: 0 0 0px 4px rgba(25, 230, 53, 0.1);
 }
 
+input[type=checkbox].form-input-green {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid #808080;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox].form-input-green::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #19e635;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type=checkbox].form-input-green:focus {
+  box-shadow: 0 0 0px 4px rgba(25, 230, 53, 0.1);
+}
+input[type=checkbox].form-input-green:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+input[type=checkbox].form-input-green:disabled::before {
+  box-shadow: inset 1em 1em #808080;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-orange {
   border: 1px solid #ffa600;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 input[type=text i].form-input-orange:focus-visible {
   box-shadow: 0 0 0px 4px rgba(255, 166, 0, 0.1);
@@ -5296,13 +5651,53 @@ input[type=text i].form-input-orange-focus:focus-visible {
   box-shadow: 0 0 0px 4px rgba(255, 166, 0, 0.1);
 }
 
+input[type=checkbox].form-input-orange {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid #808080;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox].form-input-orange::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #ffa600;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type=checkbox].form-input-orange:focus {
+  box-shadow: 0 0 0px 4px rgba(255, 166, 0, 0.1);
+}
+input[type=checkbox].form-input-orange:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+input[type=checkbox].form-input-orange:disabled::before {
+  box-shadow: inset 1em 1em #808080;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-purple {
   border: 1px solid #9900ff;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 input[type=text i].form-input-purple:focus-visible {
   box-shadow: 0 0 0px 4px rgba(153, 0, 255, 0.1);
@@ -5313,13 +5708,53 @@ input[type=text i].form-input-purple-focus:focus-visible {
   box-shadow: 0 0 0px 4px rgba(153, 0, 255, 0.1);
 }
 
+input[type=checkbox].form-input-purple {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid #808080;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox].form-input-purple::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #9900ff;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type=checkbox].form-input-purple:focus {
+  box-shadow: 0 0 0px 4px rgba(153, 0, 255, 0.1);
+}
+input[type=checkbox].form-input-purple:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+input[type=checkbox].form-input-purple:disabled::before {
+  box-shadow: inset 1em 1em #808080;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-gray {
   border: 1px solid #808080;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 input[type=text i].form-input-gray:focus-visible {
   box-shadow: 0 0 0px 4px rgba(128, 128, 128, 0.1);
@@ -5330,13 +5765,53 @@ input[type=text i].form-input-gray-focus:focus-visible {
   box-shadow: 0 0 0px 4px rgba(128, 128, 128, 0.1);
 }
 
+input[type=checkbox].form-input-gray {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid #808080;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox].form-input-gray::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #808080;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type=checkbox].form-input-gray:focus {
+  box-shadow: 0 0 0px 4px rgba(128, 128, 128, 0.1);
+}
+input[type=checkbox].form-input-gray:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+input[type=checkbox].form-input-gray:disabled::before {
+  box-shadow: inset 1em 1em #808080;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-black {
   border: 1px solid black;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 input[type=text i].form-input-black:focus-visible {
   box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.1);
@@ -5347,13 +5822,53 @@ input[type=text i].form-input-black-focus:focus-visible {
   box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.1);
 }
 
+input[type=checkbox].form-input-black {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid #808080;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox].form-input-black::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em black;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type=checkbox].form-input-black:focus {
+  box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.1);
+}
+input[type=checkbox].form-input-black:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+input[type=checkbox].form-input-black:disabled::before {
+  box-shadow: inset 1em 1em #808080;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-white {
   border: 1px solid white;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 input[type=text i].form-input-white:focus-visible {
   box-shadow: 0 0 0px 4px rgba(255, 255, 255, 0.1);
@@ -5362,6 +5877,47 @@ input[type=text i].form-input-white:focus-visible {
 
 input[type=text i].form-input-white-focus:focus-visible {
   box-shadow: 0 0 0px 4px rgba(255, 255, 255, 0.1);
+}
+
+input[type=checkbox].form-input-white {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid #808080;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+input[type=checkbox].form-input-white::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em white;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type=checkbox].form-input-white:focus {
+  box-shadow: 0 0 0px 4px rgba(255, 255, 255, 0.1);
+}
+input[type=checkbox].form-input-white:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+input[type=checkbox].form-input-white:disabled::before {
+  box-shadow: inset 1em 1em #808080;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
 }
 
 /* Floating Label */

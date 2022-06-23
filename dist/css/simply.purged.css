@@ -69,6 +69,11 @@ img {
 }
 
 @media (min-width: 0) {
+  .col-2-xs {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
   .col-12-xs {
     box-sizing: border-box;
     flex-grow: 0;
@@ -76,6 +81,16 @@ img {
   }
 }
 @media (min-width: 480px) {
+  .col-2-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .col-3-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
   .col-5-sm {
     box-sizing: border-box;
     flex-grow: 0;
@@ -142,6 +157,16 @@ img {
   }
 }
 @media (min-width: 1200px) {
+  .col-1-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .col-2-xl {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
   .col-3-xl {
     box-sizing: border-box;
     flex-grow: 0;
@@ -765,12 +790,51 @@ input[type=text i].form-input {
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 
 input[type=text i].form-input:focus-visible {
   box-shadow: 0 0 0 4px rgba(128, 128, 128, 0.1);
   outline: 0;
+}
+
+input[type=checkbox].form-input {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid grey;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox].form-input::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em grey;
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0, 43% 62%);
+}
+
+input[type=checkbox].form-input:focus {
+  box-shadow: 0 0 0 4px rgba(128, 128, 128, 0.1);
+}
+
+input[type=checkbox].form-input:disabled {
+  color: grey;
+  cursor: not-allowed;
+}
+
+input[type=checkbox].form-input:disabled::before {
+  box-shadow: inset 1em 1em grey;
 }
 
 input[type=text i].form-input-primary {
@@ -779,7 +843,6 @@ input[type=text i].form-input-primary {
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 
 input[type=text i].form-input-primary:focus-visible {
@@ -791,13 +854,56 @@ input[type=text i].form-input-primary-focus:focus-visible {
   box-shadow: 0 0 0 4px rgba(50, 109, 238, 0.1);
 }
 
+input[type=checkbox].form-input-primary {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid grey;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox].form-input-primary::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #326dee;
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0, 43% 62%);
+}
+
+input[type=checkbox].form-input-primary:focus {
+  box-shadow: 0 0 0 4px rgba(50, 109, 238, 0.1);
+}
+
+input[type=checkbox].form-input-primary:disabled {
+  color: grey;
+  cursor: not-allowed;
+}
+
+input[type=checkbox].form-input-primary:disabled::before {
+  box-shadow: inset 1em 1em grey;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-secondary {
   border: 1px solid #1ac888;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 
 input[type=text i].form-input-secondary:focus-visible {
@@ -809,13 +915,56 @@ input[type=text i].form-input-secondary-focus:focus-visible {
   box-shadow: 0 0 0 4px rgba(26, 200, 136, 0.1);
 }
 
+input[type=checkbox].form-input-secondary {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid grey;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox].form-input-secondary::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #1ac888;
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0, 43% 62%);
+}
+
+input[type=checkbox].form-input-secondary:focus {
+  box-shadow: 0 0 0 4px rgba(26, 200, 136, 0.1);
+}
+
+input[type=checkbox].form-input-secondary:disabled {
+  color: grey;
+  cursor: not-allowed;
+}
+
+input[type=checkbox].form-input-secondary:disabled::before {
+  box-shadow: inset 1em 1em grey;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-error {
   border: 1px solid #d32752;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 
 input[type=text i].form-input-error:focus-visible {
@@ -827,13 +976,56 @@ input[type=text i].form-input-error-focus:focus-visible {
   box-shadow: 0 0 0 4px rgba(211, 39, 82, 0.1);
 }
 
+input[type=checkbox].form-input-error {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid grey;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox].form-input-error::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #d32752;
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0, 43% 62%);
+}
+
+input[type=checkbox].form-input-error:focus {
+  box-shadow: 0 0 0 4px rgba(211, 39, 82, 0.1);
+}
+
+input[type=checkbox].form-input-error:disabled {
+  color: grey;
+  cursor: not-allowed;
+}
+
+input[type=checkbox].form-input-error:disabled::before {
+  box-shadow: inset 1em 1em grey;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
 input[type=text i].form-input-info {
   border: 1px solid #f6c31c;
   border-radius: 5px;
   height: 1.75rem;
   width: 100%;
   line-height: 1.3333333333rem;
-  margin-bottom: 0.75rem;
 }
 
 input[type=text i].form-input-info:focus-visible {
@@ -843,6 +1035,192 @@ input[type=text i].form-input-info:focus-visible {
 
 input[type=text i].form-input-info-focus:focus-visible {
   box-shadow: 0 0 0 4px rgba(246, 195, 28, 0.1);
+}
+
+input[type=checkbox].form-input-info {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid grey;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox].form-input-info::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #f6c31c;
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0, 43% 62%);
+}
+
+input[type=checkbox].form-input-info:focus {
+  box-shadow: 0 0 0 4px rgba(246, 195, 28, 0.1);
+}
+
+input[type=checkbox].form-input-info:disabled {
+  color: grey;
+  cursor: not-allowed;
+}
+
+input[type=checkbox].form-input-info:disabled::before {
+  box-shadow: inset 1em 1em grey;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=text i].form-input-green {
+  border: 1px solid #19e635;
+  border-radius: 5px;
+  height: 1.75rem;
+  width: 100%;
+  line-height: 1.3333333333rem;
+}
+
+input[type=text i].form-input-green:focus-visible {
+  box-shadow: 0 0 0 4px rgba(25, 230, 53, 0.1);
+  outline: 0;
+}
+
+input[type=checkbox].form-input-green {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid grey;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox].form-input-green::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #19e635;
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0, 43% 62%);
+}
+
+input[type=checkbox].form-input-green:focus {
+  box-shadow: 0 0 0 4px rgba(25, 230, 53, 0.1);
+}
+
+input[type=checkbox].form-input-green:disabled {
+  color: grey;
+  cursor: not-allowed;
+}
+
+input[type=checkbox].form-input-green:disabled::before {
+  box-shadow: inset 1em 1em grey;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=text i].form-input-purple {
+  border: 1px solid #90f;
+  border-radius: 5px;
+  height: 1.75rem;
+  width: 100%;
+  line-height: 1.3333333333rem;
+}
+
+input[type=text i].form-input-purple:focus-visible {
+  box-shadow: 0 0 0 4px rgba(153, 0, 255, 0.1);
+  outline: 0;
+}
+
+input[type=checkbox].form-input-purple {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1.5px solid grey;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox].form-input-purple::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #90f;
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0, 43% 62%);
+}
+
+input[type=checkbox].form-input-purple:focus {
+  box-shadow: 0 0 0 4px rgba(153, 0, 255, 0.1);
+}
+
+input[type=checkbox].form-input-purple:disabled {
+  color: grey;
+  cursor: not-allowed;
+}
+
+input[type=checkbox].form-input-purple:disabled::before {
+  box-shadow: inset 1em 1em grey;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
 }
 
 .floating-label-text {
