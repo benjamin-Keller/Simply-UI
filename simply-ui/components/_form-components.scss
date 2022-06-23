@@ -14,7 +14,7 @@ $gray: map-get($colors, "gray");
     }
 }
 
-@mixin inputCheck($color: $gray) {
+@mixin inputCheck($color: $gray, $border-color: $gray) {
     appearance: none;
     background-color: #fff;
     margin: 0;
@@ -22,7 +22,7 @@ $gray: map-get($colors, "gray");
     color: currentColor;
     width: 1.15em;
     height: 1.15em;
-    border: 1.5px solid $gray;
+    border: 1.5px solid $border-color;
     border-radius: 0.15em;
     transform: translateY(-0.075em);
     display: grid;
@@ -77,8 +77,14 @@ $val in $colors {
         @include inputCheck($val);
     }
 
-    input[type="checkbox"]:checked::before {
+    input[type="checkbox"]:checked.form-input-#{$key}::before {
         transform: scale(1);
     }
 
+    input[type="checkbox"].form-input-#{$key}-outline {
+        @include inputCheck($val, $val);
+    }
+    input[type="checkbox"]:checked.form-input-#{$key}-outline::before {
+        transform: scale(1);
+    }
 }
