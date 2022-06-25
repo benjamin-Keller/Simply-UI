@@ -28,7 +28,7 @@ export default function Getting_Started() {
   return (
     <div className="container mt-3">
       <Head>
-        <title>Simply-UI | Get Simple</title>
+      <title>Get Simple | Simply-UI</title>
         <meta name="description" content="Get a Simply simply CSS library" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
