@@ -78,6 +78,8 @@ See it in action with this [Demo](https://benjamin-keller.github.io/Simply-UI/)
 
 Also see sample [Homepage](https://benjamin-keller.github.io/Simply-UI/samples/homepage.html)
 
+(WIP) See the new [Docs site](https://simply-ui.vercel.app/)! 
+
 # Links
 
 - JsDeliver:
