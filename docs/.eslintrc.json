@@ -1,3 +1,11 @@
 {
-  "extends": "next"
+  "extends": "next",
+  "settings": {
+    "next": {
+      "rootDir": "docs/"
+    }
+  },
+  "rules": {
+    "react/no-unescaped-entities": "off"
+  }
 }
