@@ -35,30 +35,30 @@ export default function Getting_Started() {
 
         <main className="row justify-center flex-nowrap">
             <Sidebar />
-            <div class="ml-2 col-12-xs col-10-md col-10-lg">
+            <div className="ml-2 col-12-xs col-10-md col-10-lg">
                 <h1>Getting Started</h1>
                 <h2>Get Setup</h2>
                 <h3>CDN</h3>
-                <p><code class="text-primary font-consolas">&lt;link&gt;</code> the CDN,
-                    in your project's <code class="text-primary font-consolas">&lt;head&gt;</code>
+                <p><code className="text-primary font-consolas">&lt;link&gt;</code> the CDN,
+                    in your project's <code className="text-primary font-consolas">&lt;head&gt;</code>
                 </p>
                 <strong>JsDeliver:</strong>
                 <ol>
                     <li>Full (87.3 KB): <a href="http://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.css"
-                            class="text-secondary">https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.css</a>
+                            className="text-secondary">https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.css</a>
                     </li>
                     <li>Min (70.1 KB): <a href="http://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.min.css"
-                            class="text-secondary">https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.min.css</a>
+                            className="text-secondary">https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.min.css</a>
                     </li>
                 </ol>
 
                 <strong>UNPKG:</strong>
                 <ol>
                     <li>Full (87.3 KB): <a href="http://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.css"
-                            class="text-secondary">https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.css</a>
+                            className="text-secondary">https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.css</a>
                     </li>
                     <li>Min (70.1 KB): <a href="http://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.min.css"
-                            class="text-secondary">https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.min.css</a>
+                            className="text-secondary">https://cdn.jsdelivr.net/npm/simply-ui@1.1.6/dist/css/simply.min.css</a>
                     </li>
                 </ol>
 
@@ -70,30 +70,30 @@ export default function Getting_Started() {
 
 
 
-                <h3 class="mt-2">GitHub</h3>
+                <h3 className="mt-2">GitHub</h3>
                 <ol>
                     <li>
                         <p>Download or Clone the <a href="https://github.com/benjamin-Keller/Simply-UI"
-                                class="text-secondary">GitHub Repo</a> and
+                                className="text-secondary">GitHub Repo</a> and
                             move the <a href="https://github.com/benjamin-Keller/Simply-UI/tree/master/simply-ui"
-                                class="text-secondary">Simply-UI</a> and <a
+                                className="text-secondary">Simply-UI</a> and <a
                                 href="https://github.com/benjamin-Keller/Simply-UI/blob/master/gulpfile.js"
-                                class="text-secondary">gulpfile.js</a> folder to your project<br />(CDN and NPM coming
+                                className="text-secondary">gulpfile.js</a> folder to your project<br />(CDN and NPM coming
                             soon)
                         </p>
                     </li>
                     <li>
                         <p>In your project directory. Open Terminal and run <code
-                                class="text-primary font-consolas">gulp</code> to build .css file.
+                                className="text-primary font-consolas">gulp</code> to build .css file.
                             <br /><strong>If you use simply.purged.css the file will only have used classes thanks to <a
                                     href="https://purgecss.com/plugins/gulp.html"
-                                    class="text-secondary">gulp-purgecss</a>.</strong>
+                                    className="text-secondary">gulp-purgecss</a>.</strong>
                         </p>
                     </li>
                     <li>
-                        <p><code class="text-primary font-consolas">&lt;link&gt;</code> the built css, by default <code
-                                class="text-primary font-consolas">dist/css/simply.html</code>,
-                            in your project's <code class="text-primary font-consolas">&lt;head&gt;</code>
+                        <p><code className="text-primary font-consolas">&lt;link&gt;</code> the built css, by default <code
+                                className="text-primary font-consolas">dist/css/simply.html</code>,
+                            in your project's <code className="text-primary font-consolas">&lt;head&gt;</code>
                         </p>
 
                     </li>
