@@ -5,7 +5,7 @@ export default function Navbar({ children }) {
   return (
     <>
     <Head >
-        <script src="https://kit.fontawesome.com/2fdf03cddc.js" crossOrigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/2fdf03cddc.js" crossOrigin="anonymous" async></script>
         <body className="scrollbar-secondary" />
     </Head>
     <nav className="navbar-secondary text-white">
