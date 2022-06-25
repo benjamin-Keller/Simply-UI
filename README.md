@@ -78,7 +78,7 @@ See it in action with this [Demo](https://benjamin-keller.github.io/Simply-UI/)
 
 Also see sample [Homepage](https://benjamin-keller.github.io/Simply-UI/samples/homepage.html)
 
-(WIP) See the new [Docs site](https://simply-ui.vercel.app/)! 
+(WIP) See the new [Docs site](https://simply-ui-docs.vercel.app/) hosted in it's own GitHub Repo! 
 
 # Links
 
